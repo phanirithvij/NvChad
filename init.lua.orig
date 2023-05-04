@@ -1,0 +1,14 @@
+-- vim.g.loaded_node_provider = 0
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
+-- vim.g.loaded_python3_provider = 0
+
+vim.opt.relativenumber = true
+vim.opt.number = true
+
+-- https://www.reddit.com/r/neovim/comments/3fricd/comment/i1mnu1a/?utm_source=share&utm_medium=web2x&context=3
+vim.api.nvim_set_option("clipboard","unnamedplus")
+
+-- undo history
+vim.opt.undofile = true
+
