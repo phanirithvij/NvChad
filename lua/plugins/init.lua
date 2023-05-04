@@ -2,6 +2,8 @@
 -- List of all default plugins & their definitions
 local default_plugins = {
 
+  ["xiyaowong/transparent.nvim"] = {},
+
   "nvim-lua/plenary.nvim",
 
   -- nvchad plugins
