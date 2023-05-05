@@ -2,7 +2,12 @@
 -- List of all default plugins & their definitions
 local default_plugins = {
 
-  ["xiyaowong/transparent.nvim"] = {},
+  {
+		"xiyaowong/nvim-transparent",
+		config = function()
+			require("transparent").setup({ enable = true })
+		end,
+	},
 
   "nvim-lua/plenary.nvim",
 
