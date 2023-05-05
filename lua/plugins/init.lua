@@ -3,11 +3,17 @@
 local default_plugins = {
 
   {
-		"xiyaowong/nvim-transparent",
-		config = function()
-			require("transparent").setup({ enable = true })
-		end,
-	},
+    "xiyaowong/nvim-transparent",
+    lazy = false,
+    config = function()
+      require("transparent").setup({
+        extra_groups = {
+          "NormalFloat", -- plugins which have float panel such as Lazy, Mason, LspInfo
+          "NvimTreeNormal" -- NvimTree 
+        }
+      })
+    end,
+  },
 
   "nvim-lua/plenary.nvim",
 
