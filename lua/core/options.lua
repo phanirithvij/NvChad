@@ -8,8 +8,6 @@ g.toggle_theme_icon = "   "
 g.transparency = config.ui.transparency
 g.theme_switcher_loaded = false
 
-opt.cmdheight = 0
-
 opt.laststatus = 3 -- global statusline
 opt.showmode = false
 
